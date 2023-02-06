@@ -67,7 +67,6 @@ app.get("/", async function (req, res) {
         break;
     }
   });
-
   res.render("home", {
     r010: r010,
     r050: r050,
