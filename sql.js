@@ -56,7 +56,7 @@ const updateStocks = (
           (err, result) => {
             if (err) reject(err);
             else {
-              console.log("successfully updated Stock table!");
+              console.log("Successfully updated Stock table!");
               resolve(result);
               sql.close((err) => {
                 if (err) console.log(err);
