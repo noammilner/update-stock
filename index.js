@@ -95,7 +95,6 @@ app.post("/update", async function (req, res) {
     req.body.n2000x1,
     req.body.n2000x2
   );
-
   res.redirect("/");
 });
 
