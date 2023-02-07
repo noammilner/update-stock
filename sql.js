@@ -3,7 +3,7 @@ var sql = require("mssql/msnodesqlv8");
 const config = {
   driver: "msnodesqlv8",
   server: "localhost",
-  database: "<DB-NAME>",
+  database: "<DB_NAME>",
   options: {
     trustedConnection: true,
     useUTC: true,
@@ -56,7 +56,6 @@ const updateStocks = (
           (err, result) => {
             if (err) reject(err);
             else {
-              console.log("Successfully updated Stock table!");
               resolve(result);
               sql.close((err) => {
                 if (err) console.log(err);

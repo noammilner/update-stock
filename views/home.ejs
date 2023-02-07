@@ -1,59 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Update Stocks</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <h1>Update Stocks</h1>
-    <div class="main">
-      <form method="post" action="/update">
-        <div class="denom">
-          Roll 0.10 / 5 ILS
-          <input type="text" name="r010" value="<%= r010 %>" />
-        </div>
-        <div class="denom">
-          Roll 0.50 / 25 ILS
-          <input type="text" name="r050" value="<%= r050 %>" />
-        </div>
-        <div class="denom">
-          Roll 1.00 / 50 ILS
-          <input type="text" name="r100" value="<%= r100 %>" />
-        </div>
-        <div class="denom">
-          Roll 2.00 / 50 ILS
-          <input type="text" name="r200" value="<%= r200 %>" />
-        </div>
-        <div class="denom">
-          Roll 5.00 / 125 ILS
-          <input type="text" name="r500" value="<%= r500 %>" />
-        </div>
-        <div class="denom">
-          Roll 10.00 / 250 ILS
-          <input type="text" name="r1000" value="<%= r1000 %>" />
-        </div>
-        <div class="denom">
-          Coin 0.10
-          <input type="text" name="c010" value="<%= c010 %>" />
-        </div>
-        <div class="denom">
-          Coin 1.00
-          <input type="text" name="c100" value="<%= c100 %>" />
-        </div>
-        <div class="denom">
-          Note 20
-          <input type="text" name="n2000x1" value="<%= n2000x1 %>" />
-        </div>
-        <div class="denom">
-          Note 20
-          <input type="text" name="n2000x2" value="<%= n2000x2 %>" />
-        </div>
-        <button type="submit" class="sub-button">Submit</button>
-      </form>
-    </div>
-    <div class="footer">
-      <p>&copy; 2023 Developed by Noam Milner</p>
-    </div>
-  </body>
-</html>
+<%- include("partials/header.ejs") %>
+
+<body>
+  <h1>Update Stocks</h1>
+  <div class="main">
+    <form method="post" action="/update">
+      <div class="denom">
+        Roll 0.10 / 5 ILS
+        <input type="text" name="r010" value="<%= r010 %>" />
+      </div>
+      <div class="denom">
+        Roll 0.50 / 25 ILS
+        <input type="text" name="r050" value="<%= r050 %>" />
+      </div>
+      <div class="denom">
+        Roll 1.00 / 50 ILS
+        <input type="text" name="r100" value="<%= r100 %>" />
+      </div>
+      <div class="denom">
+        Roll 2.00 / 50 ILS
+        <input type="text" name="r200" value="<%= r200 %>" />
+      </div>
+      <div class="denom">
+        Roll 5.00 / 125 ILS
+        <input type="text" name="r500" value="<%= r500 %>" />
+      </div>
+      <div class="denom">
+        Roll 10.00 / 250 ILS
+        <input type="text" name="r1000" value="<%= r1000 %>" />
+      </div>
+      <div class="denom">
+        Coin 0.10
+        <input type="text" name="c010" value="<%= c010 %>" />
+      </div>
+      <div class="denom">
+        Coin 1.00
+        <input type="text" name="c100" value="<%= c100 %>" />
+      </div>
+      <div class="denom">
+        Note 20
+        <input type="text" name="n2000x1" value="<%= n2000x1 %>" />
+      </div>
+      <div class="denom">
+        Note 20
+        <input type="text" name="n2000x2" value="<%= n2000x2 %>" />
+      </div>
+      <button type="submit" class="sub-button">Submit</button>
+    </form>
+  </div>
+
+  <%- include("partials/footer.ejs") %>
+</body>
